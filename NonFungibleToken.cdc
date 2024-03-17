@@ -12,15 +12,15 @@ pub contract CryptoPoops: NonFungibleToken {
     pub let id: UInt64
 
     pub let name: String
-    pub let favouriteFood: String
-    pub let luckyNumber: Int
+    pub let favouriteDrink: String
+    pub let age: Int
 
-    init(_name: String, _favouriteFood: String, _luckyNumber: Int) {
+    init(_name: String, _favouriteDrink: String, _age: Int) {
       self.id = self.uuid
 
       self.name = _name
-      self.favouriteFood = _favouriteFood
-      self.luckyNumber = _luckyNumber
+      self.favouriteDrink = _favouriteDrink
+      self.age = _age
     }
   }
   pub resource interface CollectionPublic {
@@ -76,8 +76,8 @@ pub contract CryptoPoops: NonFungibleToken {
 
   pub resource Minter {
 
-    pub fun createNFT(name: String, favouriteFood: String, luckyNumber: Int): @NFT {
-      return <- create NFT(_name: name, _favouriteFood: favouriteFood, _luckyNumber: luckyNumber)
+    pub fun createNFT(name: String, favouriteDrink: String, age: Int): @NFT {
+      return <- create NFT(_name: name, _favouriteDrink: favouriteDrink, _age: age)
     }
 
     pub fun createMinter(): @Minter {
