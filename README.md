@@ -90,7 +90,7 @@ Retrieves the Minter reference from the signer's account storage.
 Retrieves the recipient's public Collection reference.
 Mint and Deposit NFT:
 
-Uses the Minter reference to create a new CryptoPoops NFT with provided metadata (name, favorite food, lucky number).
+Uses the Minter reference to create a new CryptoPoops NFT with provided metadata (name, favorite Drink, age).
 Deposits the newly minted NFT into the recipient's Collection.
 Script Structure and Flow:
 The script structure consists of two main sections:
